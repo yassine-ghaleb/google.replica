@@ -6,6 +6,9 @@ body {
 	color: #222222;
     margin:0;
 }
+ul{
+	display:inline-block;
+}
 a {
 	color:#222222;
 	text-decoration: none;
@@ -142,4 +145,57 @@ a.button:hover {
 	margin:2px 10px 0;
 	letter-spacing: 0.1px;
 	font-size: 14px;
+}
+@media (max-width: 474px){
+    .top-navigation li{
+    	font-size:9px;
+    	text-align:center;
+    }
+    .profile-img{
+    	display: none;
+    }.right-site-links{
+		display: none;
+	}	
+
+@media (max-width: 414px){
+	.top-navigation{
+		text-align: center;
+	}
+	img{
+		text-align:center;
+	}
+	.input{
+		width:20%;
+	}
+	.search-buttons{
+		text-align:center;
+	}
+	.right-site-links{
+		display: none;
+	}
+	.left-site-links{
+		display: none;
+	}
+}
+@media (max-width:375px){
+	img{
+		text-align: center;
+	}
+	.bottom-site-links{
+	    display: none;
+	}
+	.search-buttons{
+		text-align: center;
+	}
+	.input{
+		width:10%;
+	}
+	.top-navigation{
+		font-size: 10px;
+		text-align: center;
+	}
+	a{
+		text-align: center;
+		font-size: 13px;
+	}
 }
